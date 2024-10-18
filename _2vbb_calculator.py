@@ -10,24 +10,23 @@ op_r = < k | opr | i >
 sum = op_l * op_r/Ex_energy
 """
 
+def cntr_2vbb(opl, opr, ex_energy):
+    return round((opl * opr)/ex_energy, 6)
 
-op_l = -0.278995
-op_r = -0.039877
+opl1 = -0.278995
+opr1 = -0.039877
+ex_energy1 = 2.874282
 
-Ex_energy = 2.874282
-inter = -62.16550720
+cntr1 = cntr_2vbb(opl1, opr1, ex_energy1)
 
-constant = 65.0397892
+print(cntr1)
 
-sum_ = (op_l * op_r)/Ex_energy
+opl2 = 0.058098
+opr2 = 0.044247
+ex_energy2 = 4.428780
 
-print(round(sum_, 6))
+cntr2 = cntr_2vbb(opl2, opr2, ex_energy2)
 
-op_l2 = 0.058098
-op_r2 = 0.044247
+print(cntr2)
 
-Ex_energy2 = 4.428780
-inter2 = -60.61100966
-
-new = constant + inter2
-print(new)
+print(cntr1 + cntr2)
