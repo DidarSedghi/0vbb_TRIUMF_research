@@ -20,8 +20,11 @@ def data_sorter(directory, data_list):
         elif index % 2 != 0:
             line+= f"{str(data_list[index]):>9s} \n"
     
-    with opne(directory, "w") as doc:
+    with open(directory, "w") as doc:
         doc.write(line)
     
     return f"Data written to {directory}."
- 
+
+data = [1,2,3,4]
+path = "/Users/didarsedghi/Desktop/Work/McGill/U4 (2024-2025)/U4 Fall/PHYS-459D1 Research Thesis/Code/test_file.txt"
+print(data_sorter(path,data))
