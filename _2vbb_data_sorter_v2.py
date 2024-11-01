@@ -25,6 +25,6 @@ def data_sorter(directory, data_list):
     
     return f"Data written to {directory}."
 
-data = [1,2,3,4]
+data = [1,2,3,4,5,6,7,8,9,10]
 path = "/Users/didarsedghi/Desktop/Work/McGill/U4 (2024-2025)/U4 Fall/PHYS-459D1 Research Thesis/Code/test_file.txt"
 print(data_sorter(path,data))

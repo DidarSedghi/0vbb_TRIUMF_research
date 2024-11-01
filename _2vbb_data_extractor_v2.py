@@ -32,5 +32,5 @@ def data_extractor_00(directory, column):
     return "Data extracted successfully."
 
 
-print("\n", data_extractor_00(path_directory, 2), "\n")
+print("\n", data_extractor_00(path_directory, 1), "\n")
 
